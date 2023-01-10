@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>HOMEPAGE</title>
+  <link href="ASSEST/CSS/STYLE.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<br>
+
+	<div class="menu-bar">
+
+<ul>
+
+<li class="active"></li>
+<li><a href="ABOUT ME.html">ABOUT ME</a></li>
+<li><a href="FAMILY.html">FAMILY</a></li>
+<li><a href="SUKSIS.html">SUKSIS</a></li>
+<li><a href="GALLERY.html">GALLERY</a></li>
+<li><a href="CONTACT ME.html">CONTACT ME</a></li>
+</ul>
+	</div>
+<br>
+<br>
+<img src="ASSEST/IMAGE/BAJU HITAM EDIT.JPEG" height="700" weight="900"align="right" >
+
+
+	
+<br>
+<br>
+
+
+<p align="center">
+<font color="white" font size="10">
+<font size="10">
+<font face="century">
+this is website:
+</p>
+<p align="center">
+<font color="white">
+<font size="40">
+<font face="goudy stout">
+"HANA
+
+<font color="#B660CD">
+<font size="40">
+<font face="goudy stout">
+HALIM"
+</p>
+
+<center>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+
+
+<input type="italic" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<br>
+<br>
+
+<ul id="myUL">
+  <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+  <li><a href="FAMILY.html">FAMILY</a></li>
+
+  <li><a href="SUKSIS.html">SUKSIS</a></li>
+  <li><a href="SUKSIS_2.0.html">SUKSIS 2.0</a></li>
+  <li><a href="GALLERY.html">GALLERY</a></li>
+  
+  <li><a href="CONTACT ME.html">CONTACT ME</a></li>
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<br>
+
+
+<audio controls>
+	<source src="ASSEST/AT MY WORST.MP3" type="audio/ogg">
+</audio>
+
+
+</body>
+</html>
